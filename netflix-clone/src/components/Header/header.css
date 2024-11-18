@@ -1,4 +1,4 @@
-/* .header_outer_container {
+.header_outer_container {
   position: sticky;
   top: 0;
   display: flex;
@@ -12,7 +12,7 @@
   transition-timing-function: ease-in;
   z-index: 1;
   /* background-color: red; */
-/* }
+}
 .header_container {
   width: 90%;
   display: flex;
@@ -22,16 +22,16 @@
 .header_left {
   width: 140%;
   display: flex;
-} */
+}
 
-/* Outer container styling */
+/* Outer container styling
 .header_outer_container {
   width: 100%;
-  background-color: #141414; /* Netflix dark background */
+  background-color: #141414; 
   position: sticky;
   top: 0;
   z-index: 1;
-}
+} */
 
 /* Inner container styling */
 .header_container {
