@@ -73,18 +73,35 @@ import requests from "../../utils/requests";
 import "./Banner.css";
 
 const Banner = () => {
-  const [movie, setMovies] = useState([]);
+  const [movie, setMovies] = useState({});
+
+  // useEffect(() => {
+  //   (async () => {
+  //     try {
+  //       const request = await axios.get(requests.fetchNetflixOriginals);
+  //       console.log(request);
+  //       setMovies(request.data.results);
+  //     } catch (error) {
+  //       console.error("Error fetching trending movies:", error);
+  //     }
+  //   })();
+  // }, []);
 
   useEffect(() => {
     (async () => {
       try {
         const request = await axios.get(requests.fetchNetflixOriginals);
-        setMovies(request.data.results);
+        setMovies(
+          request.data.results[
+            Math.floor(Math.random() * request.data.results.length)
+          ]
+        );
       } catch (error) {
-        console.error("Error fetching trending movies:", error);
+        console.log("error", error);
       }
     })();
   }, []);
+
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
