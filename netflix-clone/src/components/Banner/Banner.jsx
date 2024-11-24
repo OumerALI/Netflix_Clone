@@ -1,72 +1,3 @@
-// import { useEffect, useState } from "react";
-// import axios from "../../utils/axios";
-// import requests from "../../utils/requests";
-
-// const Banner = () => {
-//   const [movie, setMovie] = useState({});
-
-//   useEffect(() => {
-//     (async () => {
-//       try {
-//         const request = await axios.get(requests.fetchNetflixOriginals);
-//         setMovie(
-//           request.data.results[
-//             Math.floor(Math.random() * request.data.results.length)
-//           ]
-//         );
-//       } catch (error) {
-//         console.error("Error fetching trending movies:", error);
-//       }
-//     })();
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1>Movies & Shows</h1>
-//       <ul>
-//         {Array.isArray(request.data.results) &&
-//           request.data.results.map((item) => (
-//             <li key={item.id}>{item.title || item.name}</li>
-//           ))}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default Banner;
-
-// import { useEffect, useState } from "react";
-// import axios from "../../utils/axios";
-// import requests from "../../utils/requests";
-
-// const Banner = () => {
-//   const [movie, setMovie] = useState({});
-
-//   useEffect(() => {
-//     (async () => {
-//       try {
-//         const request = await axios.get(requests.fetchNetflixOriginals);
-//         setMovie(
-//           request.data.results[
-//             Math.floor(Math.random() * request.data.results.length)
-//           ]
-//         );
-//       } catch (error) {
-//         console.error("Error fetching trending movies:", error);
-//       }
-//     })();
-//   }, []);
-
-//   return (
-//     <div>
-//       <h1>Movies & Shows</h1>
-//       <ul>{movie && <li key={movie.id}>{movie.title || movie.name}</li>}</ul>
-//     </div>
-//   );
-// };
-
-// export default Banner;
-
 import { useEffect, useState } from "react";
 import axios from "../../utils/axios";
 import requests from "../../utils/requests";
@@ -74,18 +5,6 @@ import "./Banner.css";
 
 const Banner = () => {
   const [movie, setMovies] = useState({});
-
-  // useEffect(() => {
-  //   (async () => {
-  //     try {
-  //       const request = await axios.get(requests.fetchNetflixOriginals);
-  //       console.log(request);
-  //       setMovies(request.data.results);
-  //     } catch (error) {
-  //       console.error("Error fetching trending movies:", error);
-  //     }
-  //   })();
-  // }, []);
 
   useEffect(() => {
     (async () => {

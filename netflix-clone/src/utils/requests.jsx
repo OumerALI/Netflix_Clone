@@ -1,5 +1,3 @@
-// import process from "process";
-
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 const requests = {
