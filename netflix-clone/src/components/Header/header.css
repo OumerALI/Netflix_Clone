@@ -5,13 +5,12 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(20, 20, 20);
-  background-color: transparent;
-  height: 10vh;
+  /* background-color: transparent; */
+  height: 15vh;
   color: white;
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 1;
-  /* background-color: red; */
 }
 .header_container {
   width: 90%;
@@ -30,7 +29,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 3%;
-  max-width: 1400px; /* Center content within a max-width */
+  max-width: 1400px;
   margin: auto;
   color: white;
 }
@@ -61,7 +60,7 @@
 
 .header_left ul li:first-child {
   font-weight: bold;
-  font-size: 1.3rem; /* Optional: make "Netflix" text larger */
+  font-size: 1.3rem;
 }
 
 /* Hover effect for left items */

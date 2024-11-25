@@ -1,10 +1,10 @@
-@import url(http://fonts.googleleaps.com/css2?family=inter);
+/* @import url(http://fonts.googleleaps.com/css2?family=inter); */
 
 :root {
   --font-base: "Lexend", sans-serif;
   --font-second-base: "inter", sans-serif;
   --bg-color: #111;
-  primary-color: #ffffff;
+  --primary-color: #ffffff;
   --secondary-color: #e50914;
 }
 * {
