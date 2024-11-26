@@ -1,5 +1,5 @@
 import "./header.css";
-import NetflixLogo from "../../assets/aynu.jpg";
+import NetflixLogo from "../../assets/netF.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
